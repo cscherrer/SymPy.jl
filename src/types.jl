@@ -47,6 +47,8 @@ export SymPermutationGroup
 Base.convert(::Type{SymPermutationGroup}, o::PyCall.PyObject) = SymPermutationGroup(o)
 
 
+Base.convert(::Type{Sym}, s::Sym) = s
+
 ##################################################
 
 ## important override
