@@ -2,7 +2,7 @@
 ## SymbolicObject types have field x::PyCall.PyObject
 
 ## Symbol class for controlling dispatch
-abstract type SymbolicObject <: Number end
+abstract type SymbolicObject <: Real end
 struct Sym <: SymbolicObject
     x::PyCall.PyObject
 end
